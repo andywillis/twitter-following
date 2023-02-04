@@ -1,0 +1,31 @@
+{
+  "name": "twitter-following",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "description": "Followings tools",
+  "scripts": {
+    "getwoods": "node --experimental-specifier-resolution=node src/getFollowings.js woodsbythesea",
+    "condensewoods": "node --experimental-specifier-resolution=node src/condenseData.js woodsbythesea",
+    "getRSS": "node --experimental-specifier-resolution=node src/getRSS.js woodsbythesea"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fast-xml-parser": "^4.0.15",
+    "get-twitter-followings": "^1.0.2",
+    "twitter-tokens": "^1.0.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/eslint-parser": "^7.19.1",
+    "@babel/plugin-syntax-import-assertions": "^7.20.0",
+    "babel-plugin-import": "^1.13.6",
+    "concurrently": "^7.1.0",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "vite": "^3.1.0"
+  }
+}
